@@ -1,22 +1,49 @@
 <!doctype html>
   <html>
     <head>
-      <title>Portfolio_Graphic Design</title>
+      <title>Portfolio</title>
       <meta charset="utf-8">
     </head>
-
+    <style>
+      h1 {
+        margin-top: 0px;
+        margin-bottom: 5px;
+        margin-left: 10px;
+      }
+      ul {
+        margin-top: 0;
+        font-size: 110%;
+      }
+      #title {
+        color:white;
+        background:black;
+        text-decoration:none;
+        display: block;
+        width:150px;
+        height: 150px;
+      }
+      div {
+        float:left;
+        width:30%;
+        margin-left: 3%;
+      }
+      a {
+        color:gray;
+      }
+    </style>
     <body>
       <h1>
-        <a href="index.html">
-          Yi Onnuri's Portfolio
+        <a href="index.html" id="title">
+          Yi<br>Onnuri's<br>Portfolio
         </a>
       </h1>
-
+      <h3>
+        index
+      </h3>
       <ul>
         <li><a href="gd.html">Graphic Design</a></li>
         <li><a href="fp.html">Photography</a></li>
       </ul>
-
       <h3>
         contact
       </h3>
@@ -40,6 +67,7 @@
           </a>
         </li>
       </ul>
+    </div>
 
       <h2>
         <ul>
@@ -48,15 +76,18 @@
           </li>
         </ul>
       </h2>
-        <ol>
-          <li><h3>Logo Redesign Project</h3>
-            <a href="gd_lr.html" title="Logo Redesign"><img src="logo.png" width="200px"></a>
-          </li>
-          <li><h3>Campus Map Redesign Project</h3>
-            <a href="gd_cmr.html" title="Campus Map Redesign"><img src="map_0625.png" width="200px"></a>
-          </li>
-          <li><h3>Post Stamp Design Contest</h3>
-            <a href="gd_ps.html" title="Post Stamp Design Contest"><img src="PostStampDesignContest.jpg" width="200px"></a>
-          </li>
-        </ol>
+      <p>
+        <div class="gd1">
+          <h3>1. Logo Redesign Project</h3>
+            <a href="gd_lr.html" title="Logo Redesign"><img src="logo.png" width="90%"></a>
+        </div>
+        <div class="gd2">
+          <h3>2. Campus Map Redesign Project</h3>
+            <a href="gd_cmr.html" title="Campus Map Redesign"><img src="map_0625.png" width="90%"></a>
+        </div>
+        <div class="gd3">
+          <h3>3. Post Stamp Design Contest</h3>
+            <a href="gd_ps.html" title="Post Stamp Design Contest"><img src="PostStampDesignContest.jpg" width="90%"></a>
+        </div>
+      </p>
     </body>
