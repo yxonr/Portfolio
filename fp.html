@@ -5,6 +5,33 @@
       <meta charset="utf-8">
     </head>
     <style>
+      #title {
+        color:white;
+        background:black;
+        text-decoration:none;
+        display: block;
+        width:150px;
+        height: 150px;
+      }
+      #menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 12px;
+      }
+      #gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 440px));
+        align-items: center;
+      }
+      #gallery img {
+        box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0, 3);
+        max-width: 90%;
+      }
+      img {
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
       h1 {
         margin-top: 0px;
         margin-bottom: 5px;
@@ -14,17 +41,6 @@
         margin-top: 0;
         font-size: 110%;
       }
-      #title {
-        color:white;
-        background:black;
-        text-decoration:none;
-        display: block;
-        width:150px;
-        height: 150px;
-      }
-      a {
-        color:gray;
-      }
     </style>
     <body>
       <h1>
@@ -32,38 +48,36 @@
           Yi<br>Onnuri's<br>Portfolio
         </a>
       </h1>
-      <h3>
-        index
-      </h3>
-      <ul>
-        <li><a href="gd.html">Graphic Design</a></li>
-        <li><a href="fp.html">Photography</a></li>
-      </ul>
-
-      <h3>
-        contact
-      </h3>
-      <ul>
-        <li>
-          instagram
-          <a href="https://www.instagram.com/yionr/?hl=ko" target="_blank" title="instagram profile">
-            @yionr
-          </a>
-        </li>
-        <li>
-          email
-          <a href="mailto:scorpius9510@naver.com" target="_blank" title="send an email">
-            scorpius9510@naver.com
-          </a>
-        </li>
-        <li>
-          call
-          <a href="tel:010-8561-5765" title="call">
-            010-8561-5765
-          </a>
-        </li>
-      </ul>
-
+      <div id="menu">
+        <div class="index">
+          <h3>
+            index
+          </h3>
+          <ul>
+            <li><a href="gd.html">Graphic Design</a></li>
+            <li><a href="fp.html">Photography</a></li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h3>
+            contact
+          </h3>
+          <ul>
+            <li>
+              instagram
+              <a href="https://www.instagram.com/yionr/?hl=ko" target="_blank" title="instagram profile">
+                @yionr
+              </a>
+            </li>
+            <li>
+              email
+              <a href="mailto:scorpius9510@naver.com" target="_blank" title="send an email">
+                scorpius9510@naver.com
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
       <h2>
         <ul>
           <li>
@@ -71,26 +85,25 @@
           </li>
         </ul>
       </h2>
-        <ul>
-          <li>Movement<img src="nMove.gif" width="100%"></li>
-          <li>Present<img src="nPresent.gif" width="100%"></li>
-          <li>MirrorBall<img src="nMirrorBall.gif" width="100%"></li>
-          <li>Fireplug<img src="cFireplug.JPG" width="100%"></li>
-          <li>Sunset<img src="sSunset.jpg" width="100%"></li>
-          <li>Vogue<img src="sVogue.JPG" width="100%"></li>
-          <li>Shade<img src="sShading.jpg" width="100%"></li>
-          <li>Summertime<img src="sHawaiian.JPG" width="100%"></li>
-          <li>Moon River<img src="sMoonRiver.JPG" width="100%"></li>
-          <li>Seaside Waltz<img src="pWaltz.JPG" width="100%"></li>
-          <li>Sunbathin<img src="pSunbathing.jpg" width="100%"></li>
-          <li>Garçon<img src="pGarcon.jpg" width="100%"></li>
-          <li>TOILETPAPER<img src="lOrange.jpg" width="100%"></li>
-          <li>Hotel Room<img src="lHotel.jpg" width="100%"></li>
-          <li>Rough Trade East<img src="lRoughTradeEast.jpg" width="100%"></li>
-          <li>Old Castle<img src="prCarl.jpg" width="100%"></li>
-          <li>Moss<img src="jGinkakuji.JPG" width="100%"></li>
-          <li>Nighty Night<img src="jHotel.JPG" width="100%"></li>
-          <li>Thirst<img src="jSuperDry.jpg" width="100%"></li>
-
-        </ul>
+        <div id="gallery">
+          <img src="nMove.gif" width="100%"></li>
+          <img src="nPresent.gif" width="100%"></li>
+          <img src="nMirrorBall.gif" width="100%"></li>
+          <img src="cFireplug.JPG" width="100%"></li>
+          <img src="sSunset.jpg" width="100%"></li>
+          <img src="sVogue.JPG" width="100%"></li>
+          <img src="sShading.jpg" width="100%"></li>
+          <img src="sHawaiian.JPG" width="100%"></li>
+          <img src="sMoonRiver.JPG" width="100%"></li>
+          <img src="pWaltz.JPG" width="100%"></li>
+          <img src="pSunbathing.jpg" width="100%"></li>
+          <img src="pGarcon.jpg" width="100%"></li>
+          <img src="lOrange.jpg" width="100%"></li>
+          <img src="lHotel.jpg" width="100%"></li>
+          <img src="lRoughTradeEast.jpg" width="100%"></li>
+          <img src="prCarl.jpg" width="100%"></li>
+          <img src="jGinkakuji.JPG" width="100%">
+          <img src="jHotel.JPG" width="100%">
+          <img src="jSuperDry.jpg" width="100%">
+        </div>
     </body>
