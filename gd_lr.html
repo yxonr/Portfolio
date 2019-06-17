@@ -5,6 +5,19 @@
       <meta charset="utf-8">
     </head>
     <style>
+      #title {
+        color:white;
+        background:black;
+        text-decoration:none;
+        display: block;
+        width:150px;
+        height: 150px;
+      }
+      #menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 12px;
+      }
       h1 {
         margin-top: 0px;
         margin-bottom: 5px;
@@ -14,14 +27,6 @@
         margin-top: 0;
         font-size: 110%;
       }
-      #title {
-        color:white;
-        background:black;
-        text-decoration:none;
-        display: block;
-        width:150px;
-        height: 150px;
-      }
     </style>
     <body>
       <h1>
@@ -29,31 +34,36 @@
           Yi<br>Onnuri's<br>Portfolio
         </a>
       </h1>
-      <h3>
-        index
-      </h3>
-      <ul>
-        <li><a href="gd.html">Graphic Design</a></li>
-        <li><a href="fp.html">Photography</a></li>
-      </ul>
-
-      <h3>
-        contact
-      </h3>
-      <ul>
-        <li>
-          instagram
-          <a href="https://www.instagram.com/yionr/?hl=ko" target="_blank" title="instagram profile">
-            @yionr
-          </a>
-        </li>
-        <li>
-          email
-          <a href="mailto:scorpius9510@naver.com" target="_blank" title="send an email">
-            scorpius9510@naver.com
-          </a>
-        </li>
-      </ul>
+      <div id="menu">
+        <div class="index">
+          <h3>
+            index
+          </h3>
+          <ul>
+            <li><a href="gd.html">Graphic Design</a></li>
+            <li><a href="fp.html">Photography</a></li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h3>
+            contact
+          </h3>
+          <ul>
+            <li>
+              instagram
+              <a href="https://www.instagram.com/yionr/?hl=ko" target="_blank" title="instagram profile">
+                @yionr
+              </a>
+            </li>
+            <li>
+              email
+              <a href="mailto:scorpius9510@naver.com" target="_blank" title="send an email">
+                scorpius9510@naver.com
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
       <h2>
         <ul>
